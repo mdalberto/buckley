@@ -1,0 +1,25 @@
+{
+  "name": "buckley",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdalberto/buckley.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdalberto/buckley/issues"
+  },
+  "homepage": "https://github.com/mdalberto/buckley#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

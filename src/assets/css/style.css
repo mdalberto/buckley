@@ -150,7 +150,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
   z-index: 997;
   padding: 15px 0;
   background: white;
@@ -185,6 +185,15 @@ h6 {
 /**
 * Desktop Navigation 
 */
+
+@media (max-width: 990px){
+  .header-nav{
+    max-width: 100%;
+
+  }
+}
+
+
 .navbar {
   padding: 0;
   position: initial;
@@ -192,10 +201,12 @@ h6 {
 
 .nav-group-left{
 position: absolute;
+left:0;
 }
 
 .nav-group-right{
   position: absolute;
+  right: 170px;
 }
 
 .navbar-mobile .nav-group-right{
@@ -205,6 +216,16 @@ position: absolute;
   position:initial;
 }
 
+.navbar-mobile .nav-number{
+  position:initial;
+}
+
+
+.nav-number{
+  position: absolute;
+  right:0
+
+}
 
 .navbar ul {
   margin: 0;
@@ -223,7 +244,7 @@ position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  /* padding: 10px 0 10px 30px; */
   font-size: 15px;
   font-weight: 500;
   color: black;
@@ -366,6 +387,7 @@ position: absolute;
   transition: 0.3s;
   z-index: 999;
   flex-direction: column;
+  text-align: center;
 }
 
 .mobile-nav-toggle{
@@ -385,19 +407,20 @@ position: absolute;
 
 .navbar-mobile .logo{
   position:absolute;
-  top: 15px;
+  top: 0;
 }
 .navbar-mobile ul {
   display: block;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 15px;
-  padding: 10px 0;
+  left:auto;
+  padding: 0;
   border-radius: 0;
-  background-color: #fff;
+  /*background-color: #fff;*/
   overflow-y: auto;
   transition: 0.3s;
+  text-align: center;
 }
 
 .navbar-mobile:first-child {

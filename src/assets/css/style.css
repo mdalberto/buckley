@@ -124,7 +124,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #47b2e4;
+  background: var(--primary);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -652,39 +652,20 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  
   position: relative;
   color: #003367;
 }
 
-.section-title h2::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #47b2e4;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
 
 .section-title p {
   margin-bottom: 0;
+  max-width:850px;
+  margin:0 auto;
 }
 
 /*--------------------------------------------------------------
@@ -967,6 +948,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services .section-title h2{
+  color:white;
+}
+
 .services{
   background-color: black;
   color:white;
@@ -977,6 +962,7 @@ section {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   background: #fff;
+  width:100%;
 }
 
 .services .icon-box .icon {
@@ -984,7 +970,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #47b2e4;
+  color: var(--secondary);
   font-size: 36px;
   transition: 0.3s;
 }
@@ -996,7 +982,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #003367;
+  color: var(--primary);
   transition: ease-in-out 0.3s;
 }
 
@@ -1011,7 +997,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-  color: #47b2e4;
+  color: var(--secondary);
 }
 
 /*--------------------------------------------------------------

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "dev",
+        "title": "Development & Draft Preperation",
+        "image": "/assets/img/icon-nhl.svg"
+    },
+    {
+        "id": "contract",
+        "title": "Contract Negotiations",
+        "image": "/assets/img/icon-contract.svg"
+    },
+    {
+        "id": "endorse",
+        "title": "Endorsement Opportunities",
+        "image": "/assets/img/icon-endorse.svg"
+    },
+    {
+        "id": "tax",
+        "title": "Tax Preperation",
+        "image": "/assets/img/icon-tax.svg"
+    },
+    {
+        "id": "eu",
+        "title": "European Placement",
+        "image": "/assets/img/icon-eu.svg"
+    },
+    {
+        "id": "finance",
+        "title": "Financial Management",
+        "image": "/assets/img/icon-finance.svg"
+    }
+]

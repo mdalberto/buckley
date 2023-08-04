@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "name": "Jerry Buckley",
+        "title": "Founder / CEO",
+        "image": "/assets/img/jerrybuckley.jpg",
+		"image-sm": ""
+    },
+    {
+        "id": "2",
+        "name": "Tony Voce",
+        "title": "Founder / CEO",
+        "image": "/assets/img/icon-nhl.svg",
+		"image-sm": ""
+    }
+]
+

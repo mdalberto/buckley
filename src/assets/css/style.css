@@ -963,22 +963,26 @@ section {
   transition: all ease-in-out 0.4s;
   background: #fff;
   width:100%;
+  text-align:center;
+  
 }
 
 .services .icon-box .icon {
   margin-bottom: 10px;
 }
 
-.services .icon-box .icon i {
+.services .icon-box .icon img {
   color: var(--secondary);
   font-size: 36px;
   transition: 0.3s;
+  height:100px;
 }
 
 .services .icon-box h4 {
   font-weight: 500;
-  margin-bottom: 15px;
   font-size: 24px;
+  max-width: 200px;
+    margin: 10px auto 15px auto;
 }
 
 .services .icon-box h4 a {

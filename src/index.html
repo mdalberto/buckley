@@ -1,63 +1,64 @@
 ---
 layout: layout.html
 title: "Buckely Sports Management"
-
 ---
-<!-- {% for players in players %}
-	{{ players.title }}<br>{{ players.img }}
-{% endfor %} -->
 
 
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
+
+<section id="portfolio-details" class="portfolio-details nav-spacer">
+  <div class="container-fluid ">
+    <div class="row d-lg-none d-xl-none text-center">
+      <div class="col-12 mb-3">
+        <h1>Buckley Sports Management Representing top talent in ice hockey since 2006.</h1>
+      </div>
+  </div>
 
     <div class="row gy-4">
 
       <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
-          <div class="swiper-wrapper align-items-center" id="swiper-wrapper-25dc87b8765b1a58" aria-live="off" style="transform: translate3d(-2944px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="1 / 5" style="width: 736px;">
-              <img src="assets/img/slider/portfolio-3.jpg" alt="">
+        <div class="slider-pictures portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+          <div class="swiper-wrapper align-items-center" id="swiper-wrapper-25dc87b8765b1a58" aria-live="off" style="transform: translate3d(-2944px, 0px, 0px); transition-duration: 0ms;">
+          {% for athlete in slider %}
+            <div class="swiper-slide" style="width: 300px;">
+              <img src="{{athlete.image}}" />
             </div>
-
-            <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="2 / 5" style="width: 736px;">
-              <img src="assets/img/slider/portfolio-1.jpg" alt="">
-              <div>dsfkjldskfdsl fdjkslf ldfsj dlsfkjds fl</div>
-            </div>
-
-            <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="3 / 5" style="width: 736px;">
-              <img src="assets/img/slider/portfolio-2.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="4 / 5" style="width: 736px;">
-              <img src="assets/img/slider/portfolio-3.jpg" alt="">
-            </div>
-
-          <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="5 / 5" style="width: 736px;">
-              <img src="assets/img/slider/portfolio-1.jpg" alt="">
-            </div>
+          {% endfor %}
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+          <div class="swiper-nav ">
+            <div class="swiper-button-next d-lg-none d-xl-none "></div>
+            <div class="swiper-button-prev d-lg-none d-xl-none "></div>
+          </div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
       </div>
 
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Project information</h3>
-          <ul>
-            <li><strong>Category</strong>: Web design</li>
-            <li><strong>Client</strong>: ASU Company</li>
-            <li><strong>Project date</strong>: 01 March, 2020</li>
-            <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-          </ul>
+      <div class="col-lg-4 position-relative hero-details">
+        <div class="slider-bgd"></div>
+        <div class="portfolio-info d-none d-lg-block">
+          <h1 class="home-h1"><strong>Buckley Sports Management</strong> Representing top talent in ice hockey since 2006.</h1>
         </div>
-        <div class="portfolio-description">
-          <h2>This is an example of portfolio detail</h2>
-          <p>
-            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-          </p>
-        </div>
+
+        <div class="slider-text">
+          <div class="swiper-wrapper">
+            {% for athlete in slider %}
+            <div class="swiper-slide" style="width: 300px;">
+              <div class="hero-player">
+                <div>Pro Player Represented</div>
+                <h2>{{athlete.name}}</h2>
+            </div>
+            </div>
+            {% endfor %}
+
+          </div>
+
+          <div class="swiper-nav">
+            <div class="swiper-button-next d-none d-xs-none d-sm-none  d-md-none d-lg-block"></div>
+            <div class="swiper-button-prev d-none  d-xs-none  d-sm-none d-md-none d-lg-block"></div>
+          </div>
+
+      </div>
+
+        
       </div>
 
     </div>
@@ -66,35 +67,6 @@ title: "Buckely Sports Management"
 </section>
 
 
-
-
-
-
-
-
-
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container ">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0">
-          <h1>{{ title }}</h1>
-          <h2>Your digital product's adventure begins here!</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <!-- <img src="assets/img/hero-img-2.svg" class="img-fluid animated" alt=""> -->
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
-
 <main id="main">
 
     <!-- ======= Clients Section ======= -->
@@ -102,24 +74,8 @@ title: "Buckely Sports Management"
       <div class="container">
 
         <div class="row d-flex justify-content-center" data-aos="zoom-in">
-          <div class="col-lg-7 align-items-center pt-4 pb-4">We proudly provide complete, personal representation services which enable our clients to focus their time and energy on playing hockey and aspiring toward individual goals.</div> 
-          <!-- <div class="col-lg-1 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            TRUSTWORTHY.
-            
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-
-          <div class="col-lg-1 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            KIND. <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-1 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            CHEERFUL. <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-1 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            THRIFTY. <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div> -->
-
+          <div class="col-lg-8  align-items-center pt-4 pb-4">
+          <p class="text-big">We proudly provide complete, personal representation services which enable our clients to focus their time and energy on playing hockey and aspiring toward individual goals.</p></div> 
         </div>
 
       </div>
@@ -130,7 +86,7 @@ title: "Buckely Sports Management"
 
     <!-- ======= Our Athletes Section ======= -->
     <section id="athletes" class="athletes">
-      <div class="container" data-aos="fade-up">
+      <div class="container width-max-sm" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Our Athletes</h2>
@@ -138,12 +94,13 @@ title: "Buckely Sports Management"
 
         <div class="row justify-content-center ">
 
-          {% for service in services %}
+          {% for athlete in athletes %}
 
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-2 col-md-2 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
-                <div class="icon"><img src="{{service.image}}" /></div>
-                <h4><a href="">{{service.title}}</a></h4>
+                <div class="icon"><img src="{{athlete.imageSm}}" /></div>
+                <h4><a href="">{{athlete.name}}</a></h4>
+                <p class="mb-4">{{athlete.team}}</p>
               </div>
             </div>
 
@@ -151,7 +108,11 @@ title: "Buckely Sports Management"
 
 
         </div>
-
+        <div class="section-title">
+        <button type="button" class="btn btn-secondary">
+          View All
+        </button>
+      </div>
       </div>
     </section><!-- End Services Section -->
 
@@ -166,11 +127,11 @@ title: "Buckely Sports Management"
           <p>Buckley Sports Management is committed to the long term success of its client-athletes. This begins with helping all clients realize their absolute professional potential. We offer assistance with:</p>
         </div>
 
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center mr-0 ml-0 ">
 
           {% for service in services %}
 
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-3 col-md-4 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="{{service.image}}" /></div>
                 <h4><a href="">{{service.title}}</a></h4>
@@ -188,92 +149,73 @@ title: "Buckely Sports Management"
 
 
     <!-- ======= Team Section ======= -->
-    <section id="about" class="team section-bg">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Our Athletes Section ======= -->
+    <section id="athletes" class="athletes">
+      <div class="container width-max-sm" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Meet the Team</h2>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center ">
 
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
+          {% for mate in team %}
+
+            <div class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><img src="{{mate.imageSm}}" /></div>
+                <h4><a href="">{{mate.name}}</a></h4>
+                <p class="mb-4">{{mate.title}}</p>
               </div>
             </div>
+
+          {% endfor %}
+
+
+        </div>
+        <div class="section-title">
+        <button type="button" class="btn btn-secondary">
+          Learn More
+        </button>
+      </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+    <!-- End Team Section -->
+
+
+
+      <!-- ======= Scouting Section ======= -->
+      <section id="scouting" class="scouting">
+        <div class="container width-max-sm" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>scouting, coaching, and management</h2>
+          <p>Throughout the years, Buckley Sports Management has seen a lineage of its former players remain in the NHL by way of scouting, coaching, and management. Notably:</p>
           </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+  
+          <div class="row justify-content-center ">
+  
+              <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                
+                
+              <ul class="box">
+                {% for former in former %}
+                <li><strong>{{former.name}}</strong> – {{former.team}} <i>{{former.role}}</i></li>
+                  {% endfor %}
+              </ul>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
           </div>
 
         </div>
-
-      </div>
-    </section><!-- End Team Section -->
+      </section><!-- End Scouting Section -->
 
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -308,119 +250,14 @@ title: "Buckely Sports Management"
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> -->
+    
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">+1 5589 55488 55</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">info@example.com</a></li>
-              <li><i class="bx bx-chevron-right"></i> A108 Adam Street 
-                New York, NY 535022<br>
-                United States</li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
-    
-    
-    </div>
-  </footer><!-- End Footer -->

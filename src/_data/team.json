@@ -4,14 +4,14 @@
         "name": "Jerry Buckley",
         "title": "Founder / CEO",
         "image": "/assets/img/jerrybuckley.jpg",
-		"image-sm": ""
+		"imageSm": "/assets/img/jerrybuckley.jpg"
     },
     {
         "id": "2",
         "name": "Tony Voce",
-        "title": "Founder / CEO",
-        "image": "/assets/img/icon-nhl.svg",
-		"image-sm": ""
+        "title": "Director of Player Development & Recruiting ",
+        "image": "",
+		"imageSm": ""
     }
 ]
 

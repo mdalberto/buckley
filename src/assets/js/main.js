@@ -228,12 +228,27 @@
     /**
      * Portfolio details slider
      */
-    new Swiper('.portfolio-details-slider', {
+    var sliderPictures = new Swiper('.slider-pictures', {
       speed: 400,
       loop: true,
       autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
+        delay: 10000000,
+        disableOnInteraction: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      initialSlide: 0, // HERE
+      
+    });
+
+    var sliderText = new Swiper('.slider-text', {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 10000000,
+        disableOnInteraction: true
       },
       pagination: {
         el: '.swiper-pagination',
@@ -244,8 +259,29 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      initialSlide: 0, // HERE
+      
     });
-  
+
+  // Assign each other controls
+  sliderPictures.controller.control = sliderText;
+  sliderText.controller.control = sliderPictures;
+  //   sliderPictures.on('slideNextTransitionStart', function() {
+
+  //     sliderText.slideNext();
+  //     sliderText.update(true);
+   
+  //  });
+   
+  //  sliderPictures.on('slidePrevTransitionStart', function() { 
+   
+  //   sliderText.slidePrev();
+  //   sliderText.update(true);
+   
+  //  });
+
+
+
     /**
      * Animation on scroll
      */
@@ -256,6 +292,8 @@
         once: true,
         mirror: false
       });
+
+
     });
   
   })()

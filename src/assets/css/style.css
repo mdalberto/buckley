@@ -1061,8 +1061,8 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1071,11 +1071,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #47b2e4;
+  color: var(--primary);
   float: left;
   width: 44px;
   height: 44px;
-  background: #e7f5fb;
+  background: var(--primary-tint-20);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1088,14 +1088,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #003367;
+  color: var(--primary);
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: black;
 }
 
 .contact .info .email p {
@@ -1129,7 +1129,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #47b2e4;
+  background: var(--secondary);
   color: #fff;
 }
 

@@ -25,76 +25,27 @@ title: "Buckely Sports Management"
         </div>
       </section>
 
-      <div id="jerry" class="container" data-aos="fade-up"><hr /></div>
-
+      {% for mate in team %}
+      <div id="{{mate.link}}" class="container" data-aos="fade-up"><hr /></div>
       <section>
         <div class="container" data-aos="fade-up">
           <div class="row justify-content-center">
-
             <div class="col-xl-3 col-lg-4">
-              <img class="mb-5" src="/assets/img/bios/jerrybuckley.jpg" />
+              <img class="mb-5" src="{{mate.imageSm}}" />
             </div>
             <div class="col-xl-6 col-lg-6">
-              <h2 class="text-primary h1">Jerry</h2>
-              <p class="text-primary h5">Founder and CEO</p>
-              <p>Jerry Buckley founded Buckley Sports Management in 2006 and has since established BSM as a well-respected worldwide agency for professional player representation.
-              </p>
-                <p>A native of Needham, Massachusetts, Jerry spent nearly a decade in nearby Chestnut Hill, where he attended Boston College’s Carroll School of Management, from which he graduated in 1995, and later Boston College Law School, as a member of the class of 1999. Jerry was officially admitted to the Massachusetts Bar Association in 2000.
-                </p>
-                <p>Before Jerry ever became an accomplished college scholar and NCAA hockey player, he was an NHL draft selection. With the 84th overall pick in the fourth round of the 1990 National Hockey League Entry Draft, the Boston Bruins drafted Jerry, who would go on to Boston College, where he served as team captain in his senior season. After graduating, Jerry played one season in the East Coast Hockey League before returning to BC to begin Law School.
-                </p>
-                <p>Jerry began his legal sports career in 1997 as a member of the Pro Athletes Management team in Boston. At PAM, Jerry assisted in the representation of many hockey talents, among them Keith Tkachuk, Bill Guerin and Mike Eruzione.</p>
-              </p></div>
-          </div>
-        </div>
+              <h2 class="text-primary h1">{{mate.name}}</h2>
+              <p class="text-primary h5">{{mate.title}}</p>
 
-      </section>
-
-      <div id="tony" class="container" data-aos="fade-up"><hr /></div>
-
-      <section>
-        <div class="container" data-aos="fade-up">
-          <div class="row justify-content-center">
-
-            <div class="col-xl-3 col-lg-4">
-              <img class="mb-5" src="/assets/img/bios/jerrybuckley.jpg" />
-            </div>
-            <div class="col-xl-6 col-lg-6">
-              <h2 class="text-primary h1">Tony Voce</h2>
-              <p class="text-primary h5">Director of Player Development and Recruiting</p>
-              <p>Tony&#39;s background as a former professional ice hockey player and his success in various levels of hockey make
-      him a valuable addition to the team.</p><p>
-      Tony&#39;s journey in hockey started with a successful youth hockey career, culminating in
-      his participation in the U.S.A. Hockey Nationals. He then attended Lawrence Academy
-      in Groton, Mass., where he graduated as the school&#39;s all-time leading scorer. Tony&#39;s
-      passion for hockey and his talent led him to play college hockey at Boston College, a
-      renowned Division I powerhouse.</p><p>
-      During his four years at Boston College, Tony&#39;s achievements were outstanding. He
-      contributed significantly to the team&#39;s success, including helping them win a National
-      Championship during his first year. He was a key player, leading the team in goals three
-      times and in points twice, which places him among the all-time leaders in B.C. history.
-      His exceptional performance earned him recognition as an AHCA First Team All-
-      American and a finalist for the prestigious Hobey Baker Award. In 2022 he was
-      inducted into the Boston College Hall of Fame.</p><p>
-      After college, Tony&#39;s journey continued in the AHL as part of the Philadelphia
-      Phantoms, the AHL affiliate of the Philadelphia Flyers. He was an integral part of the
-      team&#39;s success, being a top goal-scorer and leading the Phantoms in scoring during the
-      2005-2006 season. His professional hockey career extended both in the U.S. and
-      Europe before he eventually retired from playing back in his hometown, Philadelphia.
-      </p><p>
-      Given Tony&#39;s extensive experience and success in hockey, he has built a vast network of
-      contacts throughout the prep, junior, college, and professional ranks. His ability to
-      develop players&#39; skills, impart his knowledge of the game, and guide them through their
-      careers will undoubtedly make him an invaluable asset in his new role. His expertise
-      and dedication in nurturing and recruiting talent, helping young players reach their full
-      potential and achieve success in their hockey careers.</p>
+              {{mate.content | safe }}
+            
             </div>
           </div>
         </div>
-
       </section>
-    
-    <!-- End Contact Section -->
+
+      {% endfor %} 
+
 
   </main><!-- End #main -->
 

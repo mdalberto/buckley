@@ -4,14 +4,16 @@
         "name": "Jerry Buckley",
         "title": "Founder / CEO",
         "image": "/assets/img/jerrybuckley.jpg",
-		"imageSm": "/assets/img/jerrybuckley.jpg"
+		"imageSm": "/assets/img/jerrybuckley.jpg",
+        "link": "jerry"
     },
     {
         "id": "2",
         "name": "Tony Voce",
         "title": "Director of Player Development & Recruiting ",
         "image": "",
-		"imageSm": ""
+		"imageSm": "",
+        "link": "tony"
     }
 ]
 

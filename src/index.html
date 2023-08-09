@@ -16,10 +16,10 @@ title: "Buckely Sports Management"
     <div class="row gy-4">
 
       <div class="col-lg-8">
-        <div class="slider-pictures portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+        <div style="max-height:750px" class="slider-pictures portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
           <div class="swiper-wrapper align-items-center" id="swiper-wrapper-25dc87b8765b1a58" aria-live="off" style="transform: translate3d(-2944px, 0px, 0px); transition-duration: 0ms;">
           {% for athlete in slider %}
-            <div class="swiper-slide" style="width: 300px;">
+            <div class="swiper-slide" >
               <img src="{{athlete.image}}" />
             </div>
           {% endfor %}
@@ -41,7 +41,7 @@ title: "Buckely Sports Management"
         <div class="slider-text">
           <div class="swiper-wrapper">
             {% for athlete in slider %}
-            <div class="swiper-slide" style="width: 300px;">
+            <div class="swiper-slide" >
               <div class="hero-player">
                 <div>Pro Player Represented</div>
                 <h2>{{athlete.name}}</h2>
@@ -88,7 +88,7 @@ title: "Buckely Sports Management"
     <section id="athletes" class="athletes">
       <div class="container width-max-sm" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title text-center">
           <h2>Our Athletes</h2>
         </div>
 
@@ -108,7 +108,7 @@ title: "Buckely Sports Management"
 
 
         </div>
-        <div class="section-title">
+        <div class="section-title text-center">
         <button type="button" class="btn btn-secondary">
           View All
         </button>
@@ -122,7 +122,7 @@ title: "Buckely Sports Management"
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title text-center">
           <h2>Client Services</h2>
           <p>Buckley Sports Management is committed to the long term success of its client-athletes. This begins with helping all clients realize their absolute professional potential. We offer assistance with:</p>
         </div>
@@ -153,7 +153,7 @@ title: "Buckely Sports Management"
     <section id="athletes" class="athletes">
       <div class="container width-max-sm" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title text-center">
           <h2>Meet the Team</h2>
         </div>
 
@@ -161,10 +161,10 @@ title: "Buckely Sports Management"
 
           {% for mate in team %}
 
-            <div class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div onclick="location.href='/about-us#{{mate.link}}';" class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="{{mate.imageSm}}" /></div>
-                <h4><a href="">{{mate.name}}</a></h4>
+                <h4>{{mate.name}}</h4>
                 <p class="mb-4">{{mate.title}}</p>
               </div>
             </div>
@@ -173,7 +173,7 @@ title: "Buckely Sports Management"
 
 
         </div>
-        <div class="section-title">
+        <div class="section-title text-center">
         <button type="button" class="btn btn-secondary">
           Learn More
         </button>
@@ -189,7 +189,7 @@ title: "Buckely Sports Management"
       <section id="scouting" class="scouting">
         <div class="container width-max-sm" data-aos="fade-up">
   
-          <div class="section-title">
+          <div class="section-title text-center">
             <h2>scouting, coaching, and management</h2>
           <p>Throughout the years, Buckley Sports Management has seen a lineage of its former players remain in the NHL by way of scouting, coaching, and management. Notably:</p>
           </div>

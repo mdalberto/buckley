@@ -1,8 +1,7 @@
 ---
 layout: layout.html
-title: "Buckely Sports Management"
+title: Buckley Sports Management | Buckleysports.com
 ---
-
 
 
 <section id="portfolio-details" class="portfolio-details nav-spacer">
@@ -75,7 +74,8 @@ title: "Buckely Sports Management"
 
         <div class="row d-flex justify-content-center" data-aos="zoom-in">
           <div class="col-lg-8  align-items-center pt-4 pb-4">
-          <p class="text-big">We proudly provide complete, personal representation services which enable our clients to focus their time and energy on playing hockey and aspiring toward individual goals.</p></div> 
+          <p class="text-big">
+            We proudly provide complete, personal representation services which enable our clients to focus their time and energy on playing hockey and aspiring toward individual goals.</p></div> 
         </div>
 
       </div>
@@ -109,9 +109,9 @@ title: "Buckely Sports Management"
 
         </div>
         <div class="section-title text-center">
-        <button type="button" class="btn btn-secondary" style="cursor:pointer;" onclick="location.href='/athletes';">
+        <a href="/athletes" class="btn btn-secondary" >
           View All
-        </button>
+        </a>
       </div>
       </div>
     </section><!-- End Services Section -->
@@ -131,7 +131,7 @@ title: "Buckely Sports Management"
 
           {% for service in services %}
 
-            <div  style="cursor:pointer;"  onclick="location.href='/services#{{service.id}}';" class="col-xl-3 col-md-4 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}/services#{{service.id}}';" class="col-xl-3 col-md-4 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="{{service.image}}" /></div>
                 <h4>{{service.title}}</h4>
@@ -161,7 +161,7 @@ title: "Buckely Sports Management"
 
           {% for mate in team %}
 
-            <div style="cursor:pointer;" onclick="location.href='/about-us#{{mate.link}}';" class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="location.href='{{global.baseUrl}}/about-us#{{mate.link}}';" class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="{{mate.imageSm}}" /></div>
                 <h4>{{mate.name}}</h4>
@@ -174,9 +174,9 @@ title: "Buckely Sports Management"
 
         </div>
         <div class="section-title text-center">
-        <button type="button" class="btn btn-secondary"  onclick="location.href='/about-us';">
+        <a href="/about-us" class="btn btn-secondary" >
           Learn More
-        </button>
+        </a>
       </div>
       </div>
     </section>
@@ -210,54 +210,7 @@ title: "Buckely Sports Management"
           </div>
 
         </div>
-      </section><!-- End Scouting Section -->
-
-
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-
-
-        </div>
-
-      </div>
-    </section> -->
-    
-    <!-- End Contact Section -->
+      </section>
 
   </main><!-- End #main -->
 

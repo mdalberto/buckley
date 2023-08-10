@@ -232,7 +232,7 @@
       speed: 400,
       loop: true,
       autoplay: {
-        delay: 8000,
+        delay: 4000,
         disableOnInteraction: true
       },
       navigation: {
@@ -247,7 +247,7 @@
       speed: 400,
       loop: true,
       autoplay: {
-        delay: 8000,
+        delay: 4000,
         disableOnInteraction: true
       },
       pagination: {

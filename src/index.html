@@ -131,9 +131,9 @@ title: Buckley Sports Management | Buckleysports.com
 
           {% for service in services %}
 
-            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}/services#{{service.id}}';" class="col-xl-3 col-md-4 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box">
-                <div class="icon"><img src="{{service.image}}" /></div>
+            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}/services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-12 col-12 d-flex mt-4 mt-md-0 mb-5 text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box d-flex justify-content-center align-items-center">
+                <!-- <div class="icon"><img src="{{service.image}}" /></div> -->
                 <h4>{{service.title}}</h4>
               </div>
             </div>

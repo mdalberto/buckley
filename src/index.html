@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: Buckley Sports Management | Buckleysports.com
+currentPage: homepage
 ---
 
 
@@ -17,7 +18,7 @@ title: Buckley Sports Management | Buckleysports.com
       <div class="col-lg-8">
         <div style="max-height:750px" class="slider-pictures portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
           <div class="swiper-wrapper align-items-center" id="swiper-wrapper-25dc87b8765b1a58" aria-live="off" style="transform: translate3d(-2944px, 0px, 0px); transition-duration: 0ms;">
-          {% for athlete in slider %}
+          {% for athlete in athletes %}
             <div class="swiper-slide" >
               <img src="{{athlete.image}}" />
             </div>
@@ -39,7 +40,7 @@ title: Buckley Sports Management | Buckleysports.com
 
         <div class="slider-text">
           <div class="swiper-wrapper">
-            {% for athlete in slider %}
+            {% for athlete in athletes %}
             <div class="swiper-slide" >
               <div class="hero-player">
                 <div>Pro Player Represented</div>
@@ -131,7 +132,7 @@ title: Buckley Sports Management | Buckleysports.com
 
           {% for service in services %}
 
-            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}/services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-12 col-12 d-flex mt-4 mt-md-0 mb-5 text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-12 col-12 d-flex mt-4 mt-md-0 mb-5 text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box d-flex justify-content-center align-items-center">
                 <!-- <div class="icon"><img src="{{service.image}}" /></div> -->
                 <h4>{{service.title}}</h4>
@@ -161,7 +162,7 @@ title: Buckley Sports Management | Buckleysports.com
 
           {% for mate in team %}
 
-            <div style="cursor:pointer;" onclick="location.href='{{global.baseUrl}}/about-us#{{mate.link}}';" class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="location.href='{{global.baseUrl}}about-us#{{mate.link}}';" class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="{{mate.imageSm}}" /></div>
                 <h4>{{mate.name}}</h4>

@@ -303,8 +303,10 @@ left:0;
   font-weight: 500;
   color: black;
   white-space: nowrap;
-  transition: 0.3s;
+  position: relative;
+  /* transition: 0.3s; */
 }
+
 
 .navbar a i,
 .navbar a:focus i {
@@ -318,7 +320,25 @@ left:0;
 .navbar .active:focus,
 .navbar li:hover>a {
   color: var(--primary);
+  position: relative;
 }
+
+.navbar a.active::after,.navbar a:hover::after,
+.navbar .active:focus::after
+{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--primary);
+  right: 0;
+  top: 78%;
+  position: absolute;
+}
+.nav-link{
+  padding: 0.5rem 0;
+    margin: 0 1rem;
+  }
 
 .navbar .getstarted {
   padding: 8px 20px;
@@ -447,9 +467,11 @@ left:0;
 
 .mobile-nav-toggle{
   position: absolute;
-  top: 35px;
+  top: 15px;
   right: 15px;
   z-index: 1;
+  padding: 15px;
+  cursor:pointer;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -457,6 +479,8 @@ left:0;
   top: 15px;
   right: 15px;
   z-index: 1;
+  padding: 15px;
+  cursor:pointer;
 }
 
 
@@ -484,7 +508,7 @@ left:0;
 
 
 .navbar-mobile a {
-  padding: 10px 20px;
+  padding: 10px 0px;
   margin-bottom:16px;
   font-size: 15px;
   color: black;
@@ -846,7 +870,7 @@ section {
 
 .athletes .icon-box h4 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   max-width: 200px;
     margin: 10px auto 0 auto;
     color:var(--primary);
@@ -861,6 +885,8 @@ section {
   /* line-height: 24px;
   font-size: 14px; */
   margin-bottom: 0;
+  line-height: 20px;
+  padding-top: 5px;
 }
 
 .athletes .icon-box:hover {

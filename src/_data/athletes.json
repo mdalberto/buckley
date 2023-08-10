@@ -2,36 +2,36 @@
     {
         "id": "1",
         "name": "Tage Thompson",
-        "team": "Team Name",
-        "image": "",
+        "team": "Buffalo Sabres",
+        "image": "/assets/img/athletes/thompson-lg.jpg",
 		"imageSm": "/assets/img/athletes/thompson-xs.jpg"
     },
     {
         "id": "2",
         "name": "Zach Sanford",
-        "team": "Team Name",
-        "image": "",
+        "team": "Arizona Coyotes",
+        "image": "/assets/img/athletes/sanford-lg.jpg",
 		"imageSm": "/assets/img/athletes/sanford-xs.jpg"
     },
     {
         "id": "3",
         "name": "Joey Daccord",
-        "team": "Team Name",
-        "image": "",
-		"imageSm": "/assets/img/athletes/kraken-xs.jpg"
+        "team": "Seattle Kraken",
+        "image": "/assets/img/athletes/kraken-lg.jpg",
+        "imageSm": "/assets/img/athletes/kraken-xs.jpg"
     },
     {
         "id": "4",
         "name": "Tyler Boucher",
-        "team": "Team Name",
-        "image": "",
-		"imageSm": "/assets/img/athletes/boucher-xs.jpg"
+        "team": "Ottawa 67's",
+        "image": "/assets/img/athletes/boucher-lg.jpg",
+        "imageSm": "/assets/img/athletes/boucher-xs.jpg"
     },
     {
         "id": "5",
         "name": "Collin Delia",
-        "team": "Team Name",
-        "image": "",
+        "team": "Winnipeg Jets",
+        "image": "/assets/img/athletes/delia-lg.jpg",
 		"imageSm": "/assets/img/athletes/delia-sm.jpg"
     }
 ]

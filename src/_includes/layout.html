@@ -40,10 +40,8 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-
     
-    
-      <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-center position-relative header-nav">
       <!-- <h1 class="logo me-auto"><a href="index.html">Mattbotdesign</a></h1> -->
@@ -51,16 +49,16 @@
 
       <nav id="navbar" class="navbar">
         <ul class="nav-group-left">
-          <li><a class="nav-link scrollto" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/athletes">Athletes</a></li>
-          <li><a class="nav-link scrollto" href="/services">Services</a></li>
+          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'homepage' }}" href="/">Home</a></li>
+          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'athletes' }}" href="/athletes">Athletes</a></li>
+          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'services' }}" href="/services">Services</a></li>
         </ul>
         <a href="/" class="logo"><img src="/assets/img/logo/logo.svg" alt="" class="img-fluid"> </a>
         <i class="bi bi-list mobile-nav-toggle"> </i>
         <ul class="nav-group-right">
 
-          <li><a class="nav-link scrollto" href="/contact-us">Contact Us</a></li>
-          <li><a class="nav-link scrollto" href="/about-us">About Us</a></li>
+          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'contact' }}" href="/contact-us">Contact Us</a></li>
+          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'about' }}" href="/about-us">About Us</a></li>
         </ul>
         <ul class="nav-number"><li>
           <button style="cursor:pointer;" onclick="location.href='tel:401-886-6006';" type="button" class="btn btn-primary">

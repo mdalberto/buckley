@@ -841,6 +841,7 @@ section {
   font-size: 24px;
   max-width: 200px;
     margin: 10px auto 0 auto;
+    color:var(--primary);
 }
 
 .athletes .icon-box h4 a {

@@ -3,25 +3,25 @@
         "id": "1",
         "name": "Tage Thompson",
         "team": "Team Name",
-        "image": "/assets/img/athletes/tag-lg.jpg"
+        "image": "/assets/img/athletes/thompson-lg.jpg"
     },
     {
         "id": "2",
         "name": "Zach Sanford",
         "team": "Team Name",
-        "image": "/assets/img/athletes/sanfordcup-lg.jpg"
+        "image": "/assets/img/athletes/sanford-lg.jpg"
     },
     {
         "id": "3",
         "name": "Joey Daccord",
         "team": "Team Name",
-        "image": "/assets/img/athletes/joey-daccord-kraken-lg.jpg"
+        "image": "/assets/img/athletes/kraken-lg.jpg"
     },
     {
         "id": "4",
         "name": "Tyler Boucher",
         "team": "Team Name",
-        "image": "/assets/img/athletes/tylerboucher-lg.jpg"
+        "image": "/assets/img/athletes/boucher-lg.jpg"
     },
     {
         "id": "5",

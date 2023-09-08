@@ -229,10 +229,10 @@
      * Portfolio details slider
      */
     var sliderPictures = new Swiper('.slider-pictures', {
-      speed: 400,
+      speed: 600,
       loop: true,
       autoplay: {
-        delay: 4000,
+        delay: 8000,
         disableOnInteraction: true
       },
       navigation: {
@@ -240,32 +240,35 @@
         prevEl: ".swiper-button-prev",
       },
       initialSlide: 0, // HERE
+      //slidesPerView: 1,
+      //spaceBetween: 0
       
     });
 
     var sliderText = new Swiper('.slider-text', {
-      speed: 400,
+      speed: 600,
       loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: true
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
+      // no autoplay here so it won't skip slides
+      autoplay: false,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
       initialSlide: 0, // HERE
+      //slidesPerView: 1,
+      //spaceBetween: 0
       
     });
 
   // Assign each other controls
-  sliderPictures.controller.control = sliderText;
-  sliderText.controller.control = sliderPictures;
+
+  
+   sliderPictures.controller.control = sliderText;
+ sliderText.controller.control = sliderPictures;
+
+
+
+
   //   sliderPictures.on('slideNextTransitionStart', function() {
 
   //     sliderText.slideNext();

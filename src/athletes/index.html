@@ -6,7 +6,7 @@ currentPage: athletes
 
 <section class="nav-spacer bgd-primary pb-0"></section>
 
-<main id="main">
+<main id="main"  class="mb-4">
 
     <section>
       <div class="container" >
@@ -21,9 +21,7 @@ currentPage: athletes
             </div>
         </div>
       </section>
-
-
-
+ 
       <div class="container" data-aos="fade-up"><hr /></div>
 
       <section class="athletes">
@@ -34,9 +32,21 @@ currentPage: athletes
                 {% for athlete in allAthletes %}
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
                   <div class="icon-box">
-                    <div class="icon"><img src="{{athlete.imageSm}}" /></div>
-                    <h4>{{athlete.name}}</h4>
+                    <div class="icon">
+                      <!-- <a href="{{athlete.image}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" data-glightbox="title: {{athlete.name}}; description: .custom-desc{{athlete.id}}"> -->
+                      <img src="{{athlete.imageSm}}" />
+                      <!-- </a> -->
+                    </div>
+                    <h4>
+                      {{athlete.name}}
+                    </h4>
                     <p class="mb-4">{{athlete.team}}</p>
+
+
+                    <!-- <div class="glightbox-desc custom-desc{{athlete.id}}">
+                      {{athlete.content | safe }}
+                    </div>  -->
+
                   </div>
                 </div>
                 {% endfor %}
@@ -47,6 +57,6 @@ currentPage: athletes
 
     </section>
 
-
+  
   </main><!-- End #main -->
 

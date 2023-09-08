@@ -16,8 +16,8 @@ currentPage: homepage
     <div class="row gy-4">
 
       <div class="col-lg-8">
-        <div style="max-height:750px" class="slider-pictures portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
-          <div class="swiper-wrapper align-items-center" id="swiper-wrapper-25dc87b8765b1a58" aria-live="off" style="transform: translate3d(-2944px, 0px, 0px); transition-duration: 0ms;">
+        <div class="slider-pictures portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+          <div class="swiper-wrapper align-items-center" aria-live="off" style="transform: translate3d(-2944px, 0px, 0px); transition-duration: 0ms;">
           {% for athlete in athletes %}
             <div class="swiper-slide" >
               <img src="{{athlete.image}}" />
@@ -102,6 +102,9 @@ currentPage: homepage
                 <div class="icon"><img src="{{athlete.imageSm}}" /></div>
                 <h4>{{athlete.name}}</h4>
                 <p class="mb-4">{{athlete.team}}</p>
+
+              
+              
               </div>
             </div>
 
@@ -125,14 +128,14 @@ currentPage: homepage
 
         <div class="section-title text-center">
           <h2>Client Services</h2>
-          <p>Buckley Sports Management is committed to the long term success of its client-athletes. This begins with helping all clients realize their absolute professional potential. We offer assistance with:</p>
+          <p class="text-big">Buckley Sports Management is committed to the long term success of its client-athletes. This begins with helping all clients realize their absolute professional potential. We&nbsp;offer&nbsp;assistance&nbsp;with:</p>
         </div>
 
         <div class="row justify-content-center mr-0 ml-0 ">
 
           {% for service in services %}
 
-            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-12 col-12 d-flex mt-4 mt-md-0 mb-5 text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box d-flex justify-content-center align-items-center">
                 <!-- <div class="icon"><img src="{{service.image}}" /></div> -->
                 <h4>{{service.title}}</h4>
@@ -172,13 +175,40 @@ currentPage: homepage
 
           {% endfor %}
 
-
         </div>
+
+
+        <div class="section-title text-center mb-4 mt-3">
+          <a href="/about-us" class="btn btn-secondary" >
+            Learn More
+          </a>
+        </div>
+
         <div class="section-title text-center">
-        <a href="/about-us" class="btn btn-secondary" >
-          Learn More
-        </a>
-      </div>
+          <h3 class="mt-5">European Partners </h3>
+          <!-- <a href="https://3goals.com/fi/etusivu" target="_blank" ><img src="/assets/img/logo/3goals.jpg" /></a> -->
+        </div>
+
+        <div class="row justify-content-center">
+        {% for mate in partners %}
+
+        <div class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box no-hover">
+            <div class="icon"><img src="{{mate.imageSm}}" /></div>
+            <h4>{{mate.name}}</h4>
+            <p class="mb-4">{{mate.title}}</p>
+          </div>
+        </div>
+
+          {% endfor %}
+          </div>
+
+          <div class="section-title text-center mt-3">
+            <a href="https://3goals.com/fi/etusivu" target="_blank" class="btn btn-secondary" >
+              Learn More
+            </a>
+          </div>
+      
       </div>
     </section>
   
@@ -192,7 +222,7 @@ currentPage: homepage
   
           <div class="section-title text-center">
             <h2>scouting, coaching, and management</h2>
-          <p>Throughout the years, Buckley Sports Management has seen a lineage of its former players remain in the NHL by way of scouting, coaching, and management. Notably:</p>
+          <p class="text-big">Throughout the years, Buckley Sports Management has seen a lineage of its former players remain in the NHL by way of scouting, coaching, and management. Notably:</p>
           </div>
   
           <div class="row justify-content-center ">

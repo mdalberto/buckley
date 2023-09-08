@@ -22,8 +22,8 @@
         "content":""
     },{
         "id": "3",
-        "name": "Cukste",
-        "team": "Team Name",
+        "name": "Karlis Cukste",
+        "team": "",
         "image": "",
 		"imageSm": "/assets/img/athletes/cukste-sm.jpg",
         "content":""
@@ -34,34 +34,34 @@
         "team": "Winnipeg Jets",
         "image": "/assets/img/athletes/delia-lg.jpg",
 		"imageSm": "/assets/img/athletes/delia-sm.jpg",
-        "content":""
+        "content":"<h3>ffdsfsdf fdfdsa</h3><p>dksfljdsfkjdsal f;dajslfk dlkfj </p>"
     },
     {
         "id": "5",
-        "name": "Diliberatore",
-        "team": "Team Name",
+        "name": "Peter Diliberatore",
+        "team": "Vegas Golden Knights",
         "image": "",
 		"imageSm": "/assets/img/athletes/diliberatore-sm.jpg",
         "content":""
     },
     {
         "id": "6",
-        "name": "Fleming",
-        "team": "Team Name",
+        "name": "Joe Fleming",
+        "team": "Vegas Golden Knights",
         "image": "",
 		"imageSm": "/assets/img/athletes/fleming-sm.jpg",
         "content":""
     },{
         "id": "7",
-        "name": "Hardman",
-        "team": "Team Name",
+        "name": "Mike Hardman",
+        "team": "Blackhawks",
         "image": "",
 		"imageSm": "/assets/img/athletes/hardman-sm.jpg",
         "content":""
     },{
         "id": "9",
-        "name": "Kokko",
-        "team": "Team Name",
+        "name": "Niklas Kokko",
+        "team": "Seattle Kraken",
         "image": "",
 		"imageSm": "/assets/img/athletes/kokko-sm.jpg",
         "content":""
@@ -70,50 +70,50 @@
         "id": "10",
         "name": "Joey Daccord",
         "team": "Seattle Kraken",
-        "image": "/assets/img/athletes/kraken-lg.jpg",
-		"imageSm": "/assets/img/athletes/kraken-sm.jpg",
+        "image": "/assets/img/athletes/daccord-lg.jpg",
+		"imageSm": "/assets/img/athletes/daccord-sm.jpg",
         "content":""
     },{
         "id": "11",
-        "name": "Merilainen",
-        "team": "Team Name",
+        "name": "Leevi Meriläinen",
+        "team": "Belleville Senators",
         "image": "",
 		"imageSm": "/assets/img/athletes/merilainen.jpg",
         "content":""
     },{
         "id": "12",
-        "name": "Montgomery",
-        "team": "Team Name",
+        "name": "Bryce Montgomery",
+        "team": "",
         "image": "",
 		"imageSm": "/assets/img/athletes/montgomery-sm.jpg",
         "content":""
     },
     {
         "id": "13",
-        "name": "O Neill",
-        "team": "Team Name",
+        "name": "Brian O'Neill",
+        "team": "",
         "image": "",
 		"imageSm": "/assets/img/athletes/o-neill-sm.jpg",
         "content":""
     },{
         "id": "14",
-        "name": "Petruzzelli",
-        "team": "Team Name",
+        "name": "Keith Petruzzelli",
+        "team": "Toronto Maple Leafs",
         "image": "",
 		"imageSm": "/assets/img/athletes/petruzzelli-sm.jpg",
         "content":""
     },{
         "id": "15",
-        "name": "Raffl",
-        "team": "Team Name",
+        "name": "Michael Raffl",
+        "team": "",
         "image": "",
 		"imageSm": "/assets/img/athletes/raffl-sm.jpg",
         "content":""
     },
     {
         "id": "16",
-        "name": "Rathbone",
-        "team": "Team Name",
+        "name": "Jack Rathbone",
+        "team": "Vancouver Canucks",
         "image": "",
 		"imageSm": "/assets/img/athletes/rathbone-sm.jpg",
         "content":""
@@ -126,8 +126,8 @@
         "content":""
     },{
         "id": "18",
-        "name": "Smith",
-        "team": "Team Name",
+        "name": "Ben Smith",
+        "team": "",
         "image": "",
 		"imageSm": "/assets/img/athletes/smith-sm.jpg",
         "content":""
@@ -141,22 +141,22 @@
         "content":""
     },{
         "id": "20",
-        "name": "Tokarski",
-        "team": "Team Name",
+        "name": "Dustin Tokarski",
+        "team": "Pittsburgh Penguins",
         "image": "",
 		"imageSm": "/assets/img/athletes/tokarski-sm.jpg",
         "content":""
     },{
         "id": "21",
-        "name": "Vilen",
-        "team": "Team Name",
+        "name": "Topias Vilen",
+        "team": "New Jersey Devils",
         "image": "",
 		"imageSm": "/assets/img/athletes/vilen-sm.jpg",
         "content":""
     },{
         "id": "22",
-        "name": "Whelan",
-        "team": "Team Name",
+        "name": "Alex Whelan",
+        "team": "Hartford Wolf Pack",
         "image": "",
 		"imageSm": "/assets/img/athletes/whelan-sm.jpg",
         "content":""

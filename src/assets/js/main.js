@@ -224,6 +224,20 @@
     const portfolioLightbox = GLightbox({
       selector: '.portfolio-lightbox'
     });
+
+    // Preload images (you may need to adjust the image paths)
+
+var imagePaths = ['/assets/img/athletes/thompson-lg.jpg', '/assets/img/athletes/sanford-lg.jpg', '/assets/img/athletes/daccord-lg.jpg'];
+function preloadImages() {
+  for (var i = 0; i < imagePaths.length; i++) {
+    var img = new Image();
+    img.src = imagePaths[i];
+  }
+}
+
+preloadImages();
+
+
   
     /**
      * Portfolio details slider
@@ -251,8 +265,8 @@
       // no autoplay here so it won't skip slides
       autoplay: false,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".slider-text-next",
+        prevEl: ".slider-text-prev",
       },
       initialSlide: 0, // HERE
       //slidesPerView: 1,
@@ -264,27 +278,31 @@
 
   
    sliderPictures.controller.control = sliderText;
- sliderText.controller.control = sliderPictures;
+   sliderText.controller.control = sliderPictures;
 
+   if (document.querySelector('.swiper-button-prev')) {
+    
+      document.querySelector('.swiper-button-prev').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
 
+      document.querySelector('.swiper-button-next').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
 
+      document.querySelector('.slider-text-prev').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
 
-  //   sliderPictures.on('slideNextTransitionStart', function() {
+      document.querySelector('.slider-text-next').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
 
-  //     sliderText.slideNext();
-  //     sliderText.update(true);
-   
-  //  });
-   
-  //  sliderPictures.on('slidePrevTransitionStart', function() { 
-   
-  //   sliderText.slidePrev();
-  //   sliderText.update(true);
-   
-  //  });
-
-
-
+   }
     /**
      * Animation on scroll
      */
@@ -295,7 +313,6 @@
         once: true,
         mirror: false
       });
-
 
     });
   

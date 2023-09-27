@@ -6,7 +6,7 @@ currentPage: homepage
 
 
 <section id="portfolio-details" class="portfolio-details nav-spacer">
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <div class="row d-lg-none d-xl-none text-center">
       <div class="col-12 mb-3">
         <h1>Buckley Sports Management Representing top talent in ice hockey since 2006.</h1>
@@ -17,7 +17,7 @@ currentPage: homepage
 
       <div class="col-lg-8">
         <div class="slider-pictures portfolio-details-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
-          <div class="swiper-wrapper align-items-center" aria-live="off" style="transform: translate3d(-2944px, 0px, 0px); transition-duration: 0ms;">
+          <div class="swiper-wrapper align-items-center" aria-live="off" style="transition-duration: 0ms;">
           {% for athlete in athletes %}
             <div class="swiper-slide" >
               <img src="{{athlete.image}}" />
@@ -52,8 +52,8 @@ currentPage: homepage
           </div>
 
           <div class="swiper-nav">
-            <div class="swiper-button-next d-none d-xs-none d-sm-none  d-md-none d-lg-block"></div>
-            <div class="swiper-button-prev d-none  d-xs-none  d-sm-none d-md-none d-lg-block"></div>
+            <div class="slider-text-next swiper-button-next d-none d-xs-none d-sm-none  d-md-none d-lg-block"></div>
+            <div class="slider-text-prev swiper-button-prev d-none  d-xs-none  d-sm-none d-md-none d-lg-block"></div>
           </div>
 
       </div>
@@ -192,8 +192,8 @@ currentPage: homepage
         <div class="row justify-content-center">
         {% for mate in partners %}
 
-        <div class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="icon-box no-hover">
+        <div style="cursor:pointer;" onclick="location.href='{{global.baseUrl}}about-us#{{mate.link}}';" class="col-xl-3 col-md-3 col-sm-5 col-xs-5 col-5 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
             <div class="icon"><img src="{{mate.imageSm}}" /></div>
             <h4>{{mate.name}}</h4>
             <p class="mb-4">{{mate.title}}</p>

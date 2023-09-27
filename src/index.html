@@ -43,8 +43,8 @@ currentPage: homepage
             {% for athlete in athletes %}
             <div class="swiper-slide" >
               <div class="hero-player">
-                <div>Pro Player Represented</div>
                 <h2>{{athlete.name}}</h2>
+                <div>{{athlete.stats | safe }}</div>
             </div>
             </div>
             {% endfor %}
@@ -98,13 +98,10 @@ currentPage: homepage
           {% for athlete in athletes %}
 
             <div class="col-xl-2 col-md-2 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box">
+              <div class="icon-box no-hover">
                 <div class="icon"><img src="{{athlete.imageSm}}" /></div>
                 <h4>{{athlete.name}}</h4>
                 <p class="mb-4">{{athlete.team}}</p>
-
-              
-              
               </div>
             </div>
 

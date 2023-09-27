@@ -96,6 +96,13 @@
 		"imageSm": "/assets/img/athletes/o-neill-sm.jpg",
         "content":""
     },{
+        "id": "2",
+        "name": "Jusso Parssinen",
+        "team": "Nashville",
+        "stats": "7th Round 210th Overall 2019",
+        "image": "/assets/img/athletes/parssinen-lg.jpg",
+		"imageSm": "/assets/img/athletes/parssinen-sm.jpg"
+    },{
         "id": "14",
         "name": "Keith Petruzzelli",
         "team": "Toronto Maple Leafs",
@@ -139,6 +146,13 @@
         "image": "/assets/img/athletes/thompson-lg.jpg",
 		"imageSm": "/assets/img/athletes/thompson-sm.jpg",
         "content":""
+    },{
+        "id": "2",
+        "name": "Tyce Thompson",
+        "team": "NJ Devils",
+        "stats": "Natural Point Producer",
+        "image": "/assets/img/athletes/tyce-lg.jpg",
+		"imageSm": "/assets/img/athletes/tyce-sm.jpg"
     },{
         "id": "20",
         "name": "Dustin Tokarski",

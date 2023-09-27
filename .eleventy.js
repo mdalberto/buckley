@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addWatchTarget("src/css/");
      eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     //   // The base URL: defaults to Path Prefix
-    baseHref: "buckley-dev/",
+    //baseHref: "buckley-dev/",
        baseHref: "",
        //extensions: "html",
      });

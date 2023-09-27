@@ -3,36 +3,73 @@
         "id": "1",
         "name": "Tage Thompson",
         "team": "Buffalo Sabres",
+        "stats": "Top 5 Forward <br />47G-47A=94 Points in 22-23",
         "image": "/assets/img/athletes/thompson-lg.jpg",
-		"imageSm": "/assets/img/athletes/thompson-xs.jpg"
+		"imageSm": "/assets/img/athletes/thompson-sm.jpg"
     },
     {
         "id": "2",
-        "name": "Zach Sanford",
-        "team": "Arizona Coyotes",
-        "image": "/assets/img/athletes/sanford-lg.jpg",
-		"imageSm": "/assets/img/athletes/sanford-xs.jpg"
-    },
-    {
-        "id": "3",
-        "name": "Joey Daccord",
-        "team": "Seattle Kraken",
-        "image": "/assets/img/athletes/daccord-lg.jpg",
-        "imageSm": "/assets/img/athletes/daccord-xs.jpg"
+        "name": "Jusso Parssinen",
+        "team": "Nashville",
+        "stats": "7th Round 210th Overall 2019",
+        "image": "/assets/img/athletes/parssinen-lg.jpg",
+		"imageSm": "/assets/img/athletes/parssinen-sm.jpg"
     },
     {
         "id": "4",
         "name": "Tyler Boucher",
         "team": "Ottawa 67's",
+        "stats": "1st Round 10th Overall 2021",
         "image": "/assets/img/athletes/boucher-lg.jpg",
-        "imageSm": "/assets/img/athletes/boucher-xs.jpg"
+        "imageSm": "/assets/img/athletes/boucher-sm.jpg"
     },
     {
         "id": "5",
         "name": "Collin Delia",
         "team": "Winnipeg Jets",
+        "stats": "",
         "image": "/assets/img/athletes/delia-lg.jpg",
 		"imageSm": "/assets/img/athletes/delia-sm.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Joey Daccord",
+        "team": "Seattle Kraken",
+        "stats": "First ASU player to play in NHL",
+        "image": "/assets/img/athletes/daccord-lg.jpg",
+        "imageSm": "/assets/img/athletes/daccord-sm.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Tyce Thompson",
+        "team": "NJ Devils",
+        "stats": "Natural Point Producer",
+        "image": "/assets/img/athletes/tyce-lg.jpg",
+		"imageSm": "/assets/img/athletes/tyce-sm.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Jack Rathbone",
+        "team": "Vancouver",
+        "stats": "Mobile offensive Defenseman",
+        "image": "/assets/img/athletes/rathbone-lg.jpg",
+		"imageSm": "/assets/img/athletes/rathbone-sm.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Mike Hardman",
+        "team": "Chicago",
+        "stats": "Power forward with scoring ability",
+        "image": "/assets/img/athletes/hardman-lg.jpg",
+		"imageSm": "/assets/img/athletes/hardman-sm.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Zach Sanford",
+        "team": "Arizona Coyotes",
+        "stats": "",
+        "image": "/assets/img/athletes/sanford-lg.jpg",
+		"imageSm": "/assets/img/athletes/sanford-sm.jpg"
     }
 ]
 

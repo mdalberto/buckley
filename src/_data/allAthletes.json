@@ -1,12 +1,5 @@
 [
-    {
-        "id": "1",
-        "name": "Tyler Boucher",
-        "team": "Ottawa 67's",
-        "image": "/assets/img/athletes/boucher-lg.jpg",
-		"imageSm": "/assets/img/athletes/boucher-sm.jpg",
-        "content":""
-    },{
+{
         "id": "1",
         "name": "Joe Cannata",
         "team": "IK Oskarshamn",

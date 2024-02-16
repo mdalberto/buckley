@@ -16,14 +16,6 @@
 		"imageSm": "/assets/img/athletes/parssinen-sm.jpg"
     },
     {
-        "id": "4",
-        "name": "Tyler Boucher",
-        "team": "Ottawa 67's",
-        "stats": "1st Round 10th Overall 2021",
-        "image": "/assets/img/athletes/boucher-lg.jpg",
-        "imageSm": "/assets/img/athletes/boucher-sm.jpg"
-    },
-    {
         "id": "5",
         "name": "Collin Delia",
         "team": "Winnipeg Jets",

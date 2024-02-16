@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig){
      eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     //   // The base URL: defaults to Path Prefix
     //baseHref: "buckley-dev/",
-       baseHref: "",
+     //  baseHref: "http://localhost:8080//_site/",
        //extensions: "html",
      });
 

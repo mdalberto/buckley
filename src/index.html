@@ -43,8 +43,8 @@ currentPage: homepage
             {% for athlete in athletes %}
             <div class="swiper-slide" >
               <div class="hero-player">
-                <h2>{{athlete.name}}</h2>
-                <div>{{athlete.stats | safe }}</div>
+                <h2 style="padding-bottom:18px">{{athlete.name}}</h2>
+                <!-- <div>{{athlete.stats | safe }}</div> -->
             </div>
             </div>
             {% endfor %}

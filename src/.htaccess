@@ -1,0 +1,14 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /404.html
+
+Redirect 301 /about.html /about-us
+Redirect 301 /services.html /services
+Redirect 301 /athletes.html /athletes
+Redirect 301 /contact.html /contact-us
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css|css|js|gif|png|jpe?g|svg|svgz|ico|webp)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>

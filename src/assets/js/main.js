@@ -224,24 +224,85 @@
     const portfolioLightbox = GLightbox({
       selector: '.portfolio-lightbox'
     });
+
+    // Preload images (you may need to adjust the image paths)
+
+var imagePaths = ['/assets/img/athletes/thompson-lg.jpg', '/assets/img/athletes/sanford-lg.jpg', '/assets/img/athletes/daccord-lg.jpg'];
+function preloadImages() {
+  for (var i = 0; i < imagePaths.length; i++) {
+    var img = new Image();
+    img.src = imagePaths[i];
+  }
+}
+
+preloadImages();
+
+
   
     /**
      * Portfolio details slider
      */
-    new Swiper('.portfolio-details-slider', {
-      speed: 400,
+    var sliderPictures = new Swiper('.slider-pictures', {
+      speed: 600,
       loop: true,
       autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
+        delay: 8000,
+        disableOnInteraction: true
       },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      }
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      initialSlide: 0, // HERE
+      //slidesPerView: 1,
+      //spaceBetween: 0
+      
     });
+
+    var sliderText = new Swiper('.slider-text', {
+      speed: 600,
+      loop: true,
+      // no autoplay here so it won't skip slides
+      autoplay: false,
+      navigation: {
+        nextEl: ".slider-text-next",
+        prevEl: ".slider-text-prev",
+      },
+      initialSlide: 0, // HERE
+      //slidesPerView: 1,
+      //spaceBetween: 0
+      
+    });
+
+  // Assign each other controls
+
   
+   sliderPictures.controller.control = sliderText;
+   sliderText.controller.control = sliderPictures;
+
+   if (document.querySelector('.swiper-button-prev')) {
+    
+      document.querySelector('.swiper-button-prev').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
+
+      document.querySelector('.swiper-button-next').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
+
+      document.querySelector('.slider-text-prev').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
+
+      document.querySelector('.slider-text-next').addEventListener('click', function() {
+        sliderPictures.autoplay.stop();
+        sliderText.autoplay.stop();
+      });
+
+   }
     /**
      * Animation on scroll
      */
@@ -252,6 +313,7 @@
         once: true,
         mirror: false
       });
+
     });
   
   })()

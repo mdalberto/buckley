@@ -1,8 +1,16 @@
 // file that gets used by 11ty compiling
+ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
 
 module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/assets/");
     eleventyConfig.addWatchTarget("src/css/");
+     eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
+    //   // The base URL: defaults to Path Prefix
+    //baseHref: "buckley-dev/",
+     //  baseHref: "http://localhost:8080//_site/",
+       //extensions: "html",
+     });
 
     return {
         dir: {

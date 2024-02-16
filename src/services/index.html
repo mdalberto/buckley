@@ -1,0 +1,48 @@
+---
+layout: layout.html
+title: "Buckley Sports Management | Buckleysports.com / Client Services"
+currentPage: services
+---
+
+<section class="nav-spacer bgd-primary pb-0"></section>
+
+<main id="main" class="mb-4">
+
+    <section>
+      <div class="container" >
+        <div class="row justify-content-center">
+
+              <div class="col-xl-9 col-lg-10">
+                  <div class="section-title pb-0" data-aos="fade-up">
+                    <h1 class="text-uppercase">Services</h1>
+                    <p>Despite commonly held impressions to the contrary, a sports agent is more than simply a negotiator of contracts. Though negotiating contracts at all levels is a key part of the service BSM provides, it is only a small part of the profession. Buckley Sports Management takes great pride in ensuring that its clients' dealings both on and off the ice are handled in a confident and professional manner.</p>
+                    <p class="mb-0">BSM’s bevy of client services encompass, amongst many, the following:</p>
+                  </div>
+            </div>
+        </div>
+      </section>
+
+
+    {% for service in services %}
+      <div id="{{ service.id }}" class="container" data-aos="fade-up"><hr /></div>
+
+      <section>
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+
+            <div class="col-xl-3 col-lg-4 text-center">
+              <img class="mb-5" src="{{service.image}}" />
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <h2 class="text-primary h1">{{service.title}}</h2>
+              <!-- <p class="text-primary h5">Founder and CEO</p> -->
+              {{service.content | safe }}
+            </div>
+          </div>
+        </div>
+
+      </section>
+      {% endfor %}
+
+  </main><!-- End #main -->
+

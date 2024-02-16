@@ -1,0 +1,62 @@
+---
+layout: layout.html
+title: "Buckley Sports Management | Buckleysports.com / BSM Athletes"
+currentPage: athletes
+---
+
+<section class="nav-spacer bgd-primary pb-0"></section>
+
+<main id="main"  class="mb-4">
+
+    <section>
+      <div class="container" >
+        <div class="row justify-content-center">
+
+              <div class="col-xl-9 col-lg-10">
+                  <div class="section-title pb-0" data-aos="fade-up">
+                    <h1 class="text-uppercase">Athletes</h1>
+                    <p>The BSM family tree of client-athletes consists of hockey players competing in North America in the National Hockey League, the American Hockey League, and the East Coast Hockey League, as well as those skating in the most elite professional leagues in Europe.</p>
+                    <p class="mb-0">Listed below are some of Buckley Sports Management's clients:</p>
+                  </div>
+            </div>
+        </div>
+      </section>
+ 
+      <div class="container" data-aos="fade-up"><hr /></div>
+
+      <section class="athletes">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-10">
+              <div class="row justify-content-center">
+                {% for athlete in allAthletes %}
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box no-hover">
+                    <div class="icon">
+                      <!-- <a href="{{athlete.image}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" data-glightbox="title: {{athlete.name}}; description: .custom-desc{{athlete.id}}"> -->
+                      <img src="{{athlete.imageSm}}" />
+                      <!-- </a> -->
+                    </div>
+                    <h4>
+                      {{athlete.name}}
+                    </h4>
+                    <p class="mb-4">{{athlete.team}}</p>
+
+
+                    <!-- <div class="glightbox-desc custom-desc{{athlete.id}}">
+                      {{athlete.content | safe }}
+                    </div>  -->
+
+                  </div>
+                </div>
+                {% endfor %}
+            </div>
+          </div>
+      </div>
+    </div>
+
+    </section>
+
+  
+  </main><!-- End #main -->
+
